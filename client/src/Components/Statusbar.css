@@ -1,0 +1,15 @@
+.statusbar {
+    width: 100vw;
+    background: rgb(20, 91, 223);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    box-shadow: 0 20px 8px rgb(133, 118, 118, .2);
+    position: relative;
+}
+
+.sb-item {
+    padding: 10px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2em;
+}
