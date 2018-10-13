@@ -16,7 +16,11 @@ class Card extends React.Component {
 
     render() {
         return (
-            <div className="card m-3" style={cardStyle}>
+            <div className="card m-3" 
+                 style={cardStyle}
+                 key = {this.props.id}
+                 onClick = {() => this.props.handleClick(this.props.id, this.props.clicked)}
+            >
                 <img className="card-img-top" src={this.props.src} alt={this.props.alt} style={cardImg}/>
             </div>
         )
